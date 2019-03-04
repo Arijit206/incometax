@@ -672,6 +672,7 @@ nav.nav-inner {
 	float: left;
 	padding: 23px 40px 0;
 	height: 100%;
+	width: 90%
 	border-right: 1px solid rgba(255, 255, 255, 0.11);
 	background: #ffffff;
 }
@@ -681,6 +682,7 @@ nav.nav-inner {
 }
 .scroll-nav li a {
 	float: left;
+	display: block;
 	padding: 13px 35px;
 	color: #8B8B8B;
 	font-weight: 600;

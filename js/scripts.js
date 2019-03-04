@@ -8,6 +8,12 @@ function initSolonick() {
             opacity: "1"
         }, 300);
     });
+
+
+    $("#members li").click(function(){
+        location.href = $(this).find("a").attr("href");
+    });
+
     //   Background image ------------------
     var a = $(".bg");
     a.each(function (a) {

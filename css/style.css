@@ -269,6 +269,14 @@ blockquote p {
 	opacity: 0.4;
 	z-index: 3;
 }
+
+#hori ul{
+  list-style: none;
+}
+#hori li{
+  display: inline;
+}
+
 /* ------header------------------------------------------------------------ */
 .main-header {
 	position: fixed;

@@ -17,6 +17,28 @@
         <link type="text/css" rel="stylesheet" href="css/color.css">
         <!--=============== favicons ===============-->
         <link rel="shortcut icon" href="images/favicon.ico">
+
+        <style>
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          /* top: 10px; */
+          background-color: #f9f9f9;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          padding: 12px 5px;
+          z-index: 9999;
+          word-wrap: break-word;
+        }
+
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+        </style>
     </head>
     <body>
         <!--loader-->
@@ -39,14 +61,15 @@
                     <div class="menu-button-text">Menu</div>
                 </div>
                 <!-- nav-button-wrap end-->
-                <!-- <div class="header-social">
+                <div class="header-social">
                     <ul >
-                        <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                        <!-- <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
                         <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
                         <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#" target="_blank"><i class="fab fa-vk"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fab fa-vk"></i></a></li> -->
+                        <li><a href="#" target="_blank"><i class="fab fa-youtube"></i></a></li>
                     </ul>
-                </div> -->
+                </div>
                 <!--  showshare -->
                 <!-- <div class="show-share showshare">
                     <i class="fal fa-retweet"></i>
@@ -71,6 +94,7 @@
                             <li><a class="scroll-link" href="#sec5">Downloads</a></li>
                             <li><a class="scroll-link" href="#info">Information Centre</a></li>
                             <li><a class="scroll-link" href="#sec6">Contact Us</a></li>
+                            <li><a class="scroll-link" href="#">Videos</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -99,11 +123,62 @@
                 <!-- Content-->
                 <div class="content">
                     <!-- section-->
+                    <div class="single-page-decor"></div>
+                    <div class="fsp-filter">
+                        <div class="gallery-filters">
+                            <a class="scroll-link" href="index.html">Home</a>
+                            <a class="scroll-link" href="about.html">About Us</a>
+                            <a class="scroll-link" href="blog.html">Awareness Campaign</a>
+                            <a class="scroll-link" href="faq.html">FAQs</a>
+                            <div class="dropdown scroll-link">
+                                <!-- <span>Mouse over me</span> -->
+                                <li><a class="scroll-link" href="info.html">Information Centre</a></li>
+                                <div class="dropdown-content">
+                                    <ul style="text-align:justify; padding:0">
+                                        <li style="padding:2px; margin:0"><a class="scroll-link" href="info.html">Information Centre</a></li>
+                                        <li style="padding:2px; margin:0"><a class="scroll-link" href="https://www.incometaxindia.gov.in/pages/tax-laws-rules.aspx">Tax Laws and Rules</a></li>
+                                        <li style="padding:2px; margin:0"><a class="scroll-link" href="https://www.incometaxindia.gov.in/pages/tax-information-services.aspx">Tax Information and Services</a></li>
+                                        <li style="padding:2px; margin:0"><a class="scroll-link" href="services.html">Utilities</a></li>
+                                        <li style="padding:2px; margin:0"><a class="scroll-link" href="info.html">Downloads</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- <li><a class="scroll-link" href="contacts.html">Contact Us</a></li> -->
+                            <div class="dropdown scroll-link">
+                              <!-- <span>Mouse over me</span> -->
+                              <li><a class="scroll-link" href="contacts.html">Employee Corner</a></li>
+                              <div class="dropdown-content">
+                                <a href="#">Login</a>
+                                <a href="#">Sign Up</a>
+                                <br>
+                              </div>
+                            </div>
+                             <div class="dropdown scroll-link">
+                              <!-- <span>Mouse over me</span> -->
+                              <li><a class="scroll-link" href="contacts.html">Media</a></li>
+                              <div class="dropdown-content">
+                                <a href="#">Press Release</a>
+                                <a href="#">Gallery</a>
+                                <br>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
 
                     <!-- About Us -->
                     <section data-scrollax-parent="true" id="about">
                         <div class="section-subtitle"  data-scrollax="properties: { translateY: '-250px' }" > <span>//</span>About Us</div>
                         <div class="container">
+                            <div class="row" style="margin-bottom:5%;">
+                                <div class="col-md-8">
+                                    <div class="main-about fl-wrap">
+                                        <!-- <h5>Curabitur convallis fringilla diam</h5> -->
+                                        <h2>Message from <span><br>Principal Chief Commissioner</span></h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing Iste quaerat officiis, sequi Lorem ipsum dolor sit amet consectetur adipisicing Iste quaerat officiis, sequi</p>
+                                        <!-- <a href="downloads/about.docx" target="_blank" class="btn float-btn flat-btn color-btn">Read More</a> -->
+                                    </div>
+                                </div>
+                            </div>
                             <div class="row">
                                 <div class="col-md-10">
                                     <div class="main-about fl-wrap">
@@ -163,13 +238,13 @@
                                             </div>
                                         </div>
                                         <!-- features-box-container end  -->
-                                        <a href="downloads/about.docx" target="_blank" class="btn float-btn flat-btn color-btn">Read More</a>
+                                        <!-- <a href="downloads/about.docx" target="_blank" class="btn float-btn flat-btn color-btn">Read More</a> -->
                                     </div>
                                 </div>
                                 <div class="col-md-2">
                                     <div class="collage-image fl-wrap">
                                         <!-- <div class="collage-image-title" data-scrollax="properties: { translateY: '150px' }">About Us.</div> -->
-                                        <img src="images/img/brand/logo_big.png" class="respimg" alt="">
+                                        <img src="images/img/brand/logo_big#.png" class="respimg" alt="">
                                     </div>
                                 </div>
                                 
@@ -239,16 +314,16 @@
                     <!--footer-inner-->
                     <div class="footer-inner fl-wrap">
                         <div class="container">
-                            <div class="partcile-dec" data-parcount="90"></div>
+                            <!-- <div class="partcile-dec" data-parcount="90"></div> -->
                             <div class="row">
                                 <div class="col-md-3">
-                                    <div class="footer-header fl-wrap"><span>01.</span>Our Contacts</div>
+                                    <!-- <div class="footer-header fl-wrap"><span></span></div> -->
                                     <div class="footer-contacts fl-wrap">
-                                        <img src="images/img/brand/it 6.png" style="width: 100%; height: auto;">        
+                                        <img src="images/img/brand/logow.png" style="width: 100%; height: auto;">        
                                     </div>
                                 </div>
                                 <div class="col-md-3">
-                                    <div class="footer-header fl-wrap"><span>02.</span>Our Contacts</div>
+                                    <!-- <div class="footer-header fl-wrap"><span>01.</span>Our Contacts</div> -->
                                     <div class="footer-contacts fl-wrap">
                                             <ul>
                                                 <li><i class="fal fa-phone"></i><span>Phone :</span><a href="#">+489756412322</a></li>
@@ -258,7 +333,7 @@
                                         </div>
                                 </div>
                                 <div class="col-md-3">
-                                    <div class="footer-header fl-wrap"><span>03.</span> Quick Links</div>
+                                    <!-- <div class="footer-header fl-wrap"><span>02.</span> Quick Links</div> -->
                                     <!-- footer-box-->
                                     <div class="footer-box fl-wrap">
                                         <div class="footer-contacts fl-wrap">
@@ -291,7 +366,7 @@
                                     <!-- footer-box end-->
                                 </div>
                                 <div class="col-md-3">
-                                    <div class="footer-header fl-wrap"><span>04.</span> Office Address</div>
+                                    <!-- <div class="footer-header fl-wrap"><span>03.</span> Office Address</div> -->
                                     <!-- footer-box-->
                                     <div class="footer-box fl-wrap">
                                         <div class="footer-contacts fl-wrap">
@@ -304,8 +379,23 @@
                                     </div>
                                     <!-- footer-box end-->
                                 </div>
+
+                        </div>
+                        <br><br>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="container">
+                                <ul class="client-list client-list-white">
+                                    <li><a href="http://goidirectory.nic.in/" target="_blank"><img src="images/img/bar/11.png" alt=""></a></li>
+                                    <li><a href="http://office.incometaxindia.gov.in/guwahati/pages/directory-officers.aspx" target="_blank"><img src="images/img/bar/12.png" alt=""></a></li>
+                                    <li><a href="http://www.india.gov.in" target="_blank"><img src="images/img/bar/13.png" alt=""></a></li>
+                                    <li><a href="https://www.finmin.nic.in/" target="_blank"><img src="images/img/bar/14.png" alt=""></a></li>
+                                    <li><a href="https://mygov.in/" target="_blank"><img src="images/img/bar/15.png" alt=""></a></li>
+                                </ul>
+                            </div>
                             </div>
                         </div>
+                        <br><br>
                     </div>
                     <!--footer-inne endr-->
                     <!--subfooter-->

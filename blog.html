@@ -17,6 +17,28 @@
         <link type="text/css" rel="stylesheet" href="css/color.css">
         <!--=============== favicons ===============-->
         <link rel="shortcut icon" href="images/favicon.ico">
+
+        <style>
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          /* top: 10px; */
+          background-color: #f9f9f9;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          padding: 12px 5px;
+          z-index: 9999;
+          word-wrap: break-word;
+        }
+
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+        </style>
     </head>
     <body>
         <!--loader-->
@@ -39,14 +61,15 @@
                     <div class="menu-button-text">Menu</div>
                 </div>
                 <!-- nav-button-wrap end-->
-                <!-- <div class="header-social">
+                <div class="header-social">
                     <ul >
-                        <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                        <!-- <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
                         <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
                         <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#" target="_blank"><i class="fab fa-vk"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fab fa-vk"></i></a></li> -->
+                        <li><a href="#" target="_blank"><i class="fab fa-youtube"></i></a></li>
                     </ul>
-                </div> -->
+                </div>
                 <!--  showshare -->
                 <!-- <div class="show-share showshare">
                     <i class="fal fa-retweet"></i>
@@ -64,13 +87,14 @@
                 <div class="nav-title"><span>Menu</span></div>
                 <div class="nav-inner-wrap">
                     <nav class="nav-inner sound-nav" id="menu">
-                        <ul id="members">
-                            <li><a class="scroll-link" href="about.html">About Us</a></li>
-                            <li><a class="scroll-link" href="blog.html">Awareness Campaign</a></li>
-                            <li><a class="scroll-link" href="faq.html">FAQs</a></li>
+                        <ul>
+                            <li><a class="scroll-link" href="#about">About Us</a></li>
+                            <li><a class="scroll-link" href="#awareness">Awareness Campaign</a></li>
+                            <li><a class="scroll-link" href="#faq">FAQs</a></li>
                             <li><a class="scroll-link" href="#sec5">Downloads</a></li>
-                            <li><a class="scroll-link" href="info.html">Information Centre</a></li>
-                            <li><a class="scroll-link" href="contacts.html">Contact Us</a></li>
+                            <li><a class="scroll-link" href="#info">Information Centre</a></li>
+                            <li><a class="scroll-link" href="#sec6">Contact Us</a></li>
+                            <li><a class="scroll-link" href="#">Videos</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -80,8 +104,50 @@
             <div id="wrapper" class="single-page-wrap">
                 <!-- Content-->
                 <div class="content">
+
+                    <div class="single-page-decor"></div>
+                    <div class="fsp-filter">
+                        <div class="gallery-filters">
+                            <a class="scroll-link" href="index.html">Home</a>
+                            <a class="scroll-link" href="about.html">About Us</a>
+                            <a class="scroll-link" href="blog.html">Awareness Campaign</a>
+                            <a class="scroll-link" href="faq.html">FAQs</a>
+                            <div class="dropdown scroll-link">
+                                <!-- <span>Mouse over me</span> -->
+                                <li><a class="scroll-link" href="info.html">Information Centre</a></li>
+                                <div class="dropdown-content">
+                                    <ul style="text-align:justify; padding:0">
+                                        <li style="padding:2px; margin:0"><a class="scroll-link" href="info.html">Information Centre</a></li>
+                                        <li style="padding:2px; margin:0"><a class="scroll-link" href="https://www.incometaxindia.gov.in/pages/tax-laws-rules.aspx">Tax Laws and Rules</a></li>
+                                        <li style="padding:2px; margin:0"><a class="scroll-link" href="https://www.incometaxindia.gov.in/pages/tax-information-services.aspx">Tax Information and Services</a></li>
+                                        <li style="padding:2px; margin:0"><a class="scroll-link" href="services.html">Utilities</a></li>
+                                        <li style="padding:2px; margin:0"><a class="scroll-link" href="info.html">Downloads</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- <li><a class="scroll-link" href="contacts.html">Contact Us</a></li> -->
+                            <div class="dropdown scroll-link">
+                              <!-- <span>Mouse over me</span> -->
+                              <li><a class="scroll-link" href="contacts.html">Employee Corner</a></li>
+                              <div class="dropdown-content">
+                                <a href="#">Login</a>
+                                <a href="#">Sign Up</a>
+                                <br>
+                              </div>
+                            </div>
+                             <div class="dropdown scroll-link">
+                              <!-- <span>Mouse over me</span> -->
+                              <li><a class="scroll-link" href="contacts.html">Media</a></li>
+                              <div class="dropdown-content">
+                                <a href="#">Press Release</a>
+                                <a href="#">Gallery</a>
+                                <br>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
                     <!-- section-->
-                    <section class="parallax-section dark-bg sec-half parallax-sec-half-right" data-scrollax-parent="true">
+                    <!-- <section class="parallax-section dark-bg sec-half parallax-sec-half-right" data-scrollax-parent="true">
                         <div class="bg par-elem"  data-bg="images/img/blog/bg1.jpg" data-scrollax="properties: { translateY: '30%' }"></div>
                         <div class="overlay"></div>
                         <div class="pattern-bg"></div>
@@ -93,7 +159,7 @@
                             </div>
                         <a href="#sec1" class="custom-scroll-link hero-start-link"><span>Let's Start</span> <i class="fal fa-long-arrow-down"></i></a>
                         </div>
-                    </section>
+                    </section> -->
                     <!-- section end-->
                     <!-- <div class="single-page-decor"></div> -->
                     <!-- single-page-fixed-row-->
@@ -139,7 +205,7 @@
                     <!-- single-page-fixed-row end-->
                     <!-- section --> 
                     <section data-scrollax-parent="true" id="sec1">
-                        <div class="section-subtitle left-pos"  data-scrollax="properties: { translateY: '-250px' }" ><span>//</span>Journal</div>
+                        <div class="section-subtitle left-pos"  data-scrollax="properties: { translateY: '-250px' }" ><span>//</span>Awareness Campaign</div>
                         <div class="container">
                             <!-- blog-container  -->
                             <div class="fl-wrap post-container">
@@ -172,7 +238,7 @@
                                             </div>
                                         </div>
 
-                                        <hr>
+                                        <br><br>
                                         <br><br>
                                         <!-- post end-->
                                         <!-- post -->
@@ -196,7 +262,7 @@
                                             </div>
                                         </div>
 
-                                        <hr>
+                                        <br><br>
                                         <br><br>
                                         <!-- post end-->                                      
                                         <!-- post -->
@@ -222,12 +288,12 @@
                                         <!-- post end--> 
                                     </div>
                                     <!-- blog-sidebar  -->
-                                    <div class="col-md-4">
-                                        <div class="blog-sidebar fl-wrap fixed-bar">
+                                    <!-- <div class="col-md-4">
+                                        <div class="blog-sidebar fl-wrap fixed-bar"> -->
                                             <!-- widget-wrap -->
                                             <!-- widget-wrap end  -->   
                                             <!-- widget-wrap -->
-                                            <div class="widget-wrap fl-wrap">
+                                            <!-- <div class="widget-wrap fl-wrap">
                                                 <h4 class="widget-title"><span>01.</span> Lastest Videos</h4>
                                                 <div class="widget-container fl-wrap">
                                                     <div class="widget-posts fl-wrap">
@@ -258,8 +324,8 @@
                                                 </div>
                                             </div>
                                                                                                                                                                   
-                                        </div>
-                                    </div>
+                                        </div> -->
+                                    <!-- </div> -->
                                     <!-- blog-sidebar end -->
                                     <div class="limit-box fl-wrap"></div>
                                 </div>
@@ -288,14 +354,14 @@
                 <!-- Content end -->
                 <!-- footer-->
                 <div class="height-emulator fl-wrap"></div>
-                                <footer class="main-footer fixed-footer">
+                <footer class="main-footer fixed-footer">
                     <!--footer-inner-->
                     <div class="footer-inner fl-wrap">
                         <div class="container">
-                            <div class="partcile-dec" data-parcount="90"></div>
+                            <!-- <div class="partcile-dec" data-parcount="90"></div> -->
                             <div class="row">
                                 <div class="col-md-3">
-                                    <div class="footer-header fl-wrap"><span></span></div>
+                                    <!-- <div class="footer-header fl-wrap"><span></span></div> -->
                                     <div class="footer-contacts fl-wrap">
                                         <img src="images/img/brand/logow.png" style="width: 100%; height: auto;">        
                                     </div>
@@ -357,8 +423,23 @@
                                     </div>
                                     <!-- footer-box end-->
                                 </div>
+
+                        </div>
+                        <br><br>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="container">
+                                <ul class="client-list client-list-white">
+                                    <li><a href="http://goidirectory.nic.in/" target="_blank"><img src="images/img/bar/11.png" alt=""></a></li>
+                                    <li><a href="http://office.incometaxindia.gov.in/guwahati/pages/directory-officers.aspx" target="_blank"><img src="images/img/bar/12.png" alt=""></a></li>
+                                    <li><a href="http://www.india.gov.in" target="_blank"><img src="images/img/bar/13.png" alt=""></a></li>
+                                    <li><a href="https://www.finmin.nic.in/" target="_blank"><img src="images/img/bar/14.png" alt=""></a></li>
+                                    <li><a href="https://mygov.in/" target="_blank"><img src="images/img/bar/15.png" alt=""></a></li>
+                                </ul>
+                            </div>
                             </div>
                         </div>
+                        <br><br>
                     </div>
                     <!--footer-inne endr-->
                     <!--subfooter-->

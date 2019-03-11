@@ -17,6 +17,29 @@
         <link type="text/css" rel="stylesheet" href="css/color.css">
         <!--=============== favicons ===============-->
         <link rel="shortcut icon" href="images/favicon.ico">
+
+        <style>
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          /* top: 10px; */
+          background-color: #f9f9f9;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          padding: 12px 5px;
+          z-index: 9999;
+          word-wrap: break-word;
+        }
+
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+        </style>
+
     </head>
     <body>
         <!--loader-->
@@ -29,7 +52,7 @@
             <!-- header-->
              <header class="main-header">
                 <a class="logo-holder" href="index.html">
-                <img src="images/img/brand/logo.png"  alt="">
+                    <img src="images/img/brand/logo.png"  alt="">
                 </a>
                 <!-- nav-button-wrap-->
                 <div class="nav-button but-hol">
@@ -39,14 +62,15 @@
                     <div class="menu-button-text">Menu</div>
                 </div>
                 <!-- nav-button-wrap end-->
-                <!-- <div class="header-social">
+                <div class="header-social">
                     <ul >
-                        <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                        <!-- <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
                         <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
                         <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#" target="_blank"><i class="fab fa-vk"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fab fa-vk"></i></a></li> -->
+                        <li><a href="#" target="_blank"><i class="fab fa-youtube"></i></a></li>
                     </ul>
-                </div> -->
+                </div>
                 <!--  showshare -->
                 <!-- <div class="show-share showshare">
                     <i class="fal fa-retweet"></i>
@@ -72,6 +96,7 @@
                             <li><a class="scroll-link" href="#sec5">Downloads</a></li>
                             <li><a class="scroll-link" href="info.html">Information Centre</a></li>
                             <li><a class="scroll-link" href="contacts.html">Contact Us</a></li>
+                            <!-- <li><a class="scroll-link" href="#">Videos</a></li> -->
                         </ul>
                     </nav>
                 </div>
@@ -106,6 +131,49 @@
                 </div>
                 <!-- Content-->
                 <div class="content">
+
+                    <div class="single-page-decor"></div>
+                    <div class="fsp-filter">
+                        <div class="gallery-filters">
+                            <a class="scroll-link" href="index.html">Home</a>
+                            <a class="scroll-link" href="about.html">About Us</a>
+                            <a class="scroll-link" href="blog.html">Awareness Campaign</a>
+                            <a class="scroll-link" href="faq.html">FAQs</a>
+                            <div class="dropdown scroll-link">
+                                <!-- <span>Mouse over me</span> -->
+                                <li><a class="scroll-link" href="info.html">Information Centre</a></li>
+                                <div class="dropdown-content">
+                                    <ul style="text-align:justify; padding:0">
+                                        <li style="padding:2px; margin:0"><a class="scroll-link" href="info.html">Information Centre</a></li>
+                                        <li style="padding:2px; margin:0"><a class="scroll-link" href="https://www.incometaxindia.gov.in/pages/tax-laws-rules.aspx">Tax Laws and Rules</a></li>
+                                        <li style="padding:2px; margin:0"><a class="scroll-link" href="https://www.incometaxindia.gov.in/pages/tax-information-services.aspx">Tax Information and Services</a></li>
+                                        <li style="padding:2px; margin:0"><a class="scroll-link" href="services.html">Utilities</a></li>
+                                        <li style="padding:2px; margin:0"><a class="scroll-link" href="info.html">Downloads</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- <li><a class="scroll-link" href="contacts.html">Contact Us</a></li> -->
+                            <div class="dropdown scroll-link">
+                              <!-- <span>Mouse over me</span> -->
+                              <li><a class="scroll-link" href="contacts.html">Employee Corner</a></li>
+                              <div class="dropdown-content">
+                                <a href="#">Login</a>
+                                <a href="#">Sign Up</a>
+                                <br>
+                              </div>
+                            </div>
+                             <div class="dropdown scroll-link">
+                              <!-- <span>Mouse over me</span> -->
+                              <li><a class="scroll-link" href="contacts.html">Media</a></li>
+                              <div class="dropdown-content">
+                                <a href="#">Press Release</a>
+                                <a href="#">Gallery</a>
+                                <br>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- section-->
                     <section data-scrollax-parent="true">
                         <div class="section-subtitle right-pos"  data-scrollax="properties: { translateY: '-250px' }"><span>//</span>FAQ</div>
@@ -113,7 +181,7 @@
                             <!-- det box-->
                             <div class="fl-wrap">
                                 <div class="row">
-                                    <div class="col-md-4">
+                                    <div class="col-md-2">
                                         <div class="fixed-column l-wrap">
                                             <div class="pr-title fl-wrap">
                                                 <h3>FAQs</h3>
@@ -121,7 +189,7 @@
                                             <div class="ci-num"><span>01.</span></div>
                                         </div>
                                     </div>
-                                    <div class="col-md-8">
+                                    <div class="col-md-10">
                                         <div class="details-wrap fl-wrap">
                                             <h3>Income of Tribals in Non-Tribal Areas <span></span></h3>
                                         </div>
@@ -130,19 +198,23 @@
                                             <a class="toggle act-accordion" href="#"> Which area are in included as Scheduled Areas under the Income tax exemption law? 
                                             <span></span></a>
                                             <div class="accordion-inner visible">
-                                                <p>The Scheduled Areas comprise the states of Nagaland, Manipur, Tripura, Arunachal Pradesh, Mizoram, Meghalaya and specified Districts of the State of Assam, namely,  North Cachar Hills, , Karbi Anglong, Bodoland Territorial Area, Abor Hills, Mishmi Hills, Tirap Frontier Tract, and Ladakh region of the state of Jammu and Kashmir</p>
+                                                <p>The Scheduled Areas comprise the states of Nagaland, Manipur, Tripura, Arunachal Pradesh, Mizoram, Meghalaya and specified Districts of the State of Assam, namely,  North Cachar Hills, , Karbi Anglong, Bodoland Territorial Area and Ladakh region of the state of Jammu and Kashmir</p>
                                             </div>
                                             <a class="toggle" href="#">  I am a tribal living and working in schedule area, however I have house in non-schedule area (non tribal area) which is given on rent, is that income taxable?<span></span></a>
                                             <div class="accordion-inner">
-                                                <p> Income of Tribals in non-tribal areas is taxable (except income from dividend and interest on securities), please calculate the tax on that rental income and file your return of income. </p>
+                                                <p> Yes, the rental income arising from a house in a non scheduled/ specified area is taxable. You are advised to pay tax on the rental income and <a href="https://www.incometaxindia.gov.in/Pages/tax-services/file-income-tax-return.aspx">file your return of income.</a> </p>
                                             </div>
-                                            <a class="toggle" href="#">  I am a tribal working in a company based in tribal area, but my work is related to non tribal areas, or also include non tribal area, does my income is taxable?<span></span></a>
+                                            <a class="toggle" href="#">  I am a tribal working in a company based in tribal area, but my work is related to non tribal areas. Is my income taxable?<span></span></a>
                                             <div class="accordion-inner">
-                                                <p> Income which is coming to you for work in non scheduled areas is taxable, please taxes and file Return of Income.</p>
+                                                <p> Yes, the income earned from the work carried out in non-tribal area is taxable in the hands of the tribal. </p>
                                             </div>
-                                             <a class="toggle" href="#">  I am a tribal living in a schedule area, my friend lives in a non schedule area is asking some private loan from me, is this interest earned by me from a non-scheduled area taxable?<span></span></a>
+                                             <a class="toggle" href="#">  I am a tribal living in a schedule area. My friend lives in a non schedule area and is asking some private loan from me. Is this interest earned by me from a non-scheduled area taxable?<span></span></a>
                                             <div class="accordion-inner">
-                                                <p> Yes, only interest from securities and dividend income is exempt when earned from all over the country, all other exempt income has to arise within the schedule areas. Interest received from friend /relative is not considered to be  interest from securities.</p>
+                                                <p> Yes, the interest from loan earned from a non specified scheduled arear is taxable. Interest received from friend /relative is not considered to be  interest from securities. Only the interest from securities is exempt.</p>
+                                            </div>
+                                             <a class="toggle" href="#">  I am a tribal working in a company based in tribal area, but my work are being carried out in tribal areas as well as non tribal areas. Is my income taxable?<span></span></a>
+                                            <div class="accordion-inner">
+                                                <p> The part of income earned in the tribal area is not taxable and the rest of income from non-tribal area is taxable in your hands as a tribal. </p>
                                             </div>
                                         </div>
                                         <!-- accordion end -->
@@ -165,15 +237,15 @@
                             <!-- det box-->
                             <div class="fl-wrap">
                                 <div class="row">
-                                    <div class="col-md-4">
+                                    <div class="col-md-2">
                                         <div class="fixed-column l-wrap">
                                             <div class="pr-title fl-wrap">
-                                                <h3> Income of Partnership firms, companies, AOPs etc.</h3>
+                                                <!-- <h3> Income of Partnership firms, companies, AOPs etc.</h3> -->
                                             </div>
-                                            <div class="ci-num"><span>01.</span></div>
+                                            <!-- <div class="ci-num"><span>01.</span></div> -->
                                         </div>
                                     </div>
-                                    <div class="col-md-8">
+                                    <div class="col-md-10">
                                         <div class="details-wrap fl-wrap">
                                             <h3> Income of Partnership firms, companies, AOPs etc.</h3>
                                         </div>
@@ -183,7 +255,13 @@
 
                                             <span></span></a>
                                             <div class="accordion-inner visible">
-                                                <p> No, only income of individual members of Scheduled Tribes arising in Scheduled area is exempt; moreover, income of Partnership firm, company, AOP is always liable to tax.  Please file your return of income and pay taxes. </p>
+                                                <p> No, only income of individual members of Scheduled Tribes arising in Scheduled area is exempt. Income of Partnership firms, company, AOP is taxable irrespective of whether it is constituted by tribals.  <a href="https://www.incometaxindia.gov.in/Pages/tax-services/file-income-tax-return.aspx"> Please file your return of income and pay taxes.</a> </p>
+                                            </div>
+                                            <a class="toggle act-accordion" href="#"> I am a tribal running a business in the individual capacity as proprietor in my home state. My employees are both tribal and non tribals. Do I have to deduct tax from them?
+
+                                            <span></span></a>
+                                            <div class="accordion-inner visible">
+                                                <p> If you are running the business as an individual, there is no need to deduct tax from their salaries.  </p>
                                             </div>
                                         </div>
                                         <!-- accordion end -->
@@ -206,7 +284,7 @@
                             <!-- det box-->
                             <div class="fl-wrap">
                                 <div class="row">
-                                    <div class="col-md-4">
+                                    <div class="col-md-2">
                                         <div class="fixed-column l-wrap">
                                             <div class="pr-title fl-wrap">
                                                 <h3></h3>
@@ -214,16 +292,21 @@
                                             <div class="ci-num"><span>01.</span></div>
                                         </div>
                                     </div>
-                                    <div class="col-md-8">
+                                    <div class="col-md-10">
                                         <div class="details-wrap fl-wrap">
                                             <h3>All cash loan of more than 20,000/-</h3>
                                         </div>
                                         <!-- accordion-->
                                         <div class="accordion mar-top">
-                                            <a class="toggle act-accordion" href="#"> I am a tribal living in tribal areas, I have taken a loan of Rs. 2 lakh in cash from other tribal, now some person is telling me I have to pay tax.
+                                            <a class="toggle act-accordion" href="#"> I am a tribal living in a specified tribal area. I have taken a loan of Rs. 2 lakh in cash from other tribal, now some person is telling me I have to pay tax. 
                                             <span></span></a>
                                             <div class="accordion-inner visible">
-                                                <p>Even as a tribal working in Scheduled areas, if you take a loan of more than Rs.20000/- in cash, or repay a loan of more than 20,000/- by cash, you will be liable to penalty of 100% of the amount.</p>
+                                                <p>Yes,  you will be liable to pay penalty equivalent of the loan amount. Even as a tribal working in Scheduled areas, if you take a loan of more than Rs.20000/- in cash, or repay a loan of more than 20,000/- by cash, you will be liable to penalty of 100% of the amount. </p>
+                                            </div>
+                                            <a class="toggle act-accordion" href="#"> I am a tribal residing in a non specified scheduled area. I have earned income from dividend and interest on securities from non specified tribal areas. Please tell whether my such income are taxable or not. 
+                                            <span></span></a>
+                                            <div class="accordion-inner visible">
+                                                <p>Your such income from dividend and interest on securities are exempt from taxation even if they are earned outside the specified areas. </p>
                                             </div>
                                         </div>
                                         <!-- accordion end -->
@@ -246,7 +329,7 @@
                             <!-- det box-->
                             <div class="fl-wrap">
                                 <div class="row">
-                                    <div class="col-md-4">
+                                    <div class="col-md-2">
                                         <div class="fixed-column l-wrap">
                                             <div class="pr-title fl-wrap">
                                                 <h3></h3>
@@ -254,17 +337,17 @@
                                             <div class="ci-num"><span>01.</span></div>
                                         </div>
                                     </div>
-                                    <div class="col-md-8">
+                                    <div class="col-md-10">
                                         <div class="details-wrap fl-wrap">
                                             <h3>All cash receipts more than Rs. 2,00,000/-</h3>
                                         </div>
                                         <!-- accordion-->
                                         <div class="accordion mar-top">
-                                            <a class="toggle act-accordion" href="#"> I am a tribal residing in tribal areas and have no requirement to pay tax. However, I went to the shop for purchase of a car and wanted to pay in cash, but the dealer didn’t sell me the car. 
+                                            <a class="toggle act-accordion" href="#"> I am a tribal residing in tribal areas and have no requirement to pay tax. One day, I went to a shop for purchase of a car and wanted to pay in cash, but the dealer didn’t sell me the car. 
 
                                             <span></span></a>
                                             <div class="accordion-inner visible">
-                                                <p> If any person receives any amount of more than Rs.10 lakhs in cash for sale of any goods/services/property, that person is liable to pay penalty of an equal amount, irrespective of the fact that the payee or payer, or both, are otherwise exempt from tax. </p>
+                                                <p> If any person receives any amount of more than Rs.10 lakhs in cash for sale of any goods/services/property, that person is liable to pay penalty of an equal amount, irrespective of the fact that the payee or payer, or both, are tribal or otherwise exempt from tax. As such, the dealer rightly did not accept your payment in cash.  </p>
                                             </div>
                                         </div>
                                         <!-- accordion end -->
@@ -287,7 +370,7 @@
                             <!-- det box-->
                             <div class="fl-wrap">
                                 <div class="row">
-                                    <div class="col-md-4">
+                                    <div class="col-md-2">
                                         <div class="fixed-column l-wrap">
                                             <div class="pr-title fl-wrap">
                                                 <h3></h3>
@@ -295,21 +378,29 @@
                                             <div class="ci-num"><span>01.</span></div>
                                         </div>
                                     </div>
-                                    <div class="col-md-8">
+                                    <div class="col-md-10">
                                         <div class="details-wrap fl-wrap">
                                             <h3>Certificate U/S. 197 </h3>
                                         </div>
                                         <!-- accordion-->
                                         <div class="accordion mar-top">
-                                            <a class="toggle act-accordion" href="#">I am a tribal living and working in schedule area, I am getting salary, my DDO is deducting TDS on same, what should I do?
+                                            <a class="toggle act-accordion" href="#">I am a tribal living and working in schedule area. I am getting salary and my DDO is deducting TDS on same. What should I do?
 
                                             <span></span></a>
                                             <div class="accordion-inner visible">
-                                                <p>Being a tribal living in schedule areas, your income earned in the scheduled area  is exempt; however that income is liable to TDS, thus you can claim refund by filing a Return of Income, alternatively you can apply in form no. 13 to ITO (TDS) of your area for certificate under 197 of IT Act, after which your TDS would not be deducted or would be deducted at minimum rate. You can also apply through internet or by post.</p>
+                                                <p>Your DDO is rightly deducting the tax on your salary income. For non-deduction of tax, you need to file online, Form 13 and get a certificate of non-deduction/lower TDS deduction from your jurisdictional TDS officer. You could alternatively file your return of income and claim refund. Tax on salary has to be deducted in each and every case by the DDO unless the certificate u/s. 197 is filed.</p>
                                             </div>
-                                            <a class="toggle" href="#"> I am a tribal working in tribal area for a company which is not based in tribal area, but my job is related to work in tribal area, company is deducting tax what should I do?<span></span></a>
+                                            <a class="toggle" href="#"> I am tribal residing in tribal areas, but have some property/bank account abroad from which no income is received, do I need to file an Income Tax Return?.<span></span></a>
                                             <div class="accordion-inner">
-                                                <p>Being a tribal living in schedule areas, your income earned in that area is exempt; since your income arises out of a job performed in the scheduled area, the same is exempt even though the Company is located in a non-scheduled area. However that income is liable to TDS, thus you can claim refund by filing ROI, alternatively you can apply in form no. 13 to ITO (TDS) of your area for certificate under 197 of IT Act, after which your TDS would not be deducted or would be deducted at minimum rate. You can also apply through internet or by post.</p>
+                                                <p>Yes, under the Black Money Act, you are liable to disclose such property, including bank accounts held abroad, in your Return of Income, failing which you will be liable to prosecution.</p>
+                                            </div>
+                                            <a class="toggle" href="#"> I am a tribal working in tribal area for a company which is not based in tribal area, but my job is related to work in specified tribal areas. My company is deducting tax. What should I do?<span></span></a>
+                                            <div class="accordion-inner">
+                                                <p>Being a tribal living in a schedule area, your income earned in that specified scheduled area is exempt. Since, your income arises out of a job performed in the specified scheduled area, the same is exempt even though the Company is located in a non-scheduled area. For non-deduction of tax, you need to file online Form 13 and get a certificate of non-deduction/lower TDS deduction from <a href="https://drive.google.com/open?id=1SFNejXFL_DF7nw0AXaiZSopeBKi1EjR_"> your jurisdictional TDS officer</a>. You could alternatively <a href="https://www.incometaxindia.gov.in/Pages/tax-services/file-income-tax-return.aspx"> file your return of income and claim refund</a>. Tax on salary has to be deducted in each and every case by the DDO unless the certificate u/s. 197 is filed.</p>
+                                            </div>
+                                            <a class="toggle" href="#"> I am one of the tribal running a business as a  firm/AOP/company in my home state. My employees are both tribal and non tribals. Do I have to deduct tax from them?<span></span></a>
+                                            <div class="accordion-inner">
+                                                <p>Yes. If you are running the business as a firm, AOP or company, you are liable to deduct TDS of all employees except in cases where they submit non-deduction certificate u/s 197. Please note that the income of the firm, AOP or company etc is also taxable separately. </p>
                                             </div>
                                         </div>
                                         <!-- accordion end -->
@@ -332,15 +423,15 @@
                             <!-- det box-->
                             <div class="fl-wrap">
                                 <div class="row">
-                                    <div class="col-md-4">
+                                    <div class="col-md-2">
                                         <div class="fixed-column l-wrap">
                                             <div class="pr-title fl-wrap">
-                                                <h3>benami</h3>
+                                                <h3>Benami</h3>
                                             </div>
                                             <div class="ci-num"><span>01.</span></div>
                                         </div>
                                     </div>
-                                    <div class="col-md-8">
+                                    <div class="col-md-10">
                                         <div class="details-wrap fl-wrap">
                                             <h3>Benami Law</h3>
                                         </div>
@@ -350,11 +441,11 @@
 
                                             <span></span></a>
                                             <div class="accordion-inner visible">
-                                                <p>If somebody approaches you to partner in his business, always opt for a registered partnership firm or company, and have name of partner included in official documents   income from such an entity would be taxable. However, if you open a company/firm in your own name and make some other person an informal director/partner, both you and that person are liable to be prosecuted under the Benami law which may lead to imprisonment up to seven years, along with confiscation of property etc. </p>
+                                                <p>If somebody approaches you to partner in his business, always opt for a registered partnership firm or company, and have name of partner included in official documents. Income from such an entity would be taxable. However, if you open a company/firm in your own name and make some other person an informal director/partner, both you and that person are liable to be prosecuted under the Benami law which may lead to imprisonment up to seven years, along with confiscation of property etc.</p>
                                             </div>
-                                            <a class="toggle" href="#">one of my friend is approaching me to purchase a land in my area, as he can’t purchase the same in his own name as per existing laws. He is promising me to pay the full cost for the land, alongwith some additional amount, and is also offering me a job of running that business or property. Should I agree to his proposal? <span></span></a>
+                                            <a class="toggle" href="#">One of my friend is approaching me to purchase a land in my area, as he can’t purchase the same in his own name as per existing laws. He is promising me to pay the full cost for the land, alongwith some additional amount, and is also offering me a job of running that business or property. Should I agree to his proposal?  <span></span></a>
                                             <div class="accordion-inner">
-                                                <p> Purchasing any property, doing any business in name of another person, is prohibited and the property/business is liable to be confiscated. Both the person in whose name it is done and person who is investing are liable to be prosecuted under Benami law. This will be the liability , regardless of whether the  persons are tribals or non tribals. </p>
+                                                <p> Purchasing any property, doing any business in name of another person, is prohibited and the property/business is liable to be confiscated. Both the person in whose name it is done and person who is investing are liable to be prosecuted under Benami law/ all will be liable, regardless of whether the  persons are tribals or non tribals.  </p>
                                             </div>
                                         </div>
                                         <!-- accordion end -->
@@ -377,7 +468,7 @@
                             <!-- det box-->
                             <div class="fl-wrap">
                                 <div class="row">
-                                    <div class="col-md-4">
+                                    <div class="col-md-2">
                                         <div class="fixed-column l-wrap">
                                             <div class="pr-title fl-wrap">
                                                 <h3>General FAQ</h3>
@@ -385,7 +476,7 @@
                                             <div class="ci-num"><span>01.</span></div>
                                         </div>
                                     </div>
-                                    <div class="col-md-8">
+                                    <div class="col-md-10">
                                         <div class="details-wrap fl-wrap">
                                             <h3>General FAQs</h3>
                                         </div>
@@ -421,14 +512,14 @@
                 <!-- Content end -->
                 <!-- footer-->
                 <div class="height-emulator fl-wrap"></div>
-                                <footer class="main-footer fixed-footer">
+                <footer class="main-footer fixed-footer">
                     <!--footer-inner-->
                     <div class="footer-inner fl-wrap">
                         <div class="container">
-                            <div class="partcile-dec" data-parcount="90"></div>
+                            <!-- <div class="partcile-dec" data-parcount="90"></div> -->
                             <div class="row">
                                 <div class="col-md-3">
-                                    <div class="footer-header fl-wrap"><span></span></div>
+                                    <!-- <div class="footer-header fl-wrap"><span></span></div> -->
                                     <div class="footer-contacts fl-wrap">
                                         <img src="images/img/brand/logow.png" style="width: 100%; height: auto;">        
                                     </div>
@@ -490,8 +581,23 @@
                                     </div>
                                     <!-- footer-box end-->
                                 </div>
+
+                        </div>
+                        <br><br>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="container">
+                                <ul class="client-list client-list-white">
+                                    <li><a href="http://goidirectory.nic.in/" target="_blank"><img src="images/img/bar/11.png" alt=""></a></li>
+                                    <li><a href="http://office.incometaxindia.gov.in/guwahati/pages/directory-officers.aspx" target="_blank"><img src="images/img/bar/12.png" alt=""></a></li>
+                                    <li><a href="http://www.india.gov.in" target="_blank"><img src="images/img/bar/13.png" alt=""></a></li>
+                                    <li><a href="https://www.finmin.nic.in/" target="_blank"><img src="images/img/bar/14.png" alt=""></a></li>
+                                    <li><a href="https://mygov.in/" target="_blank"><img src="images/img/bar/15.png" alt=""></a></li>
+                                </ul>
+                            </div>
                             </div>
                         </div>
+                        <br><br>
                     </div>
                     <!--footer-inne endr-->
                     <!--subfooter-->
